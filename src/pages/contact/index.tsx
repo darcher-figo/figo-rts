@@ -1,0 +1,13 @@
+import * as React from 'react';
+import { title } from './data.fixture';
+import './style.scss';
+
+export const Contact: React.FC<{ heading?: string }> = ({ heading = title }): JSX.Element => {
+  return (
+    <>
+      <h1 className="contact-title">{heading}</h1>
+    </>
+  );
+};
+
+export default Contact;
