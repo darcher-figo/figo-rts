@@ -1,4 +1,32 @@
 .app-title {
 
+  color: rgb(231 76 60 / 95%);
+  font: 100 4rem/1.5 system-ui, sans-serif;
+  text-align: center;
+  text-shadow: 0 -1px 2px rgb(239 239 239);
+}
+
+.app-title .title-abbr {
+
   color: rgb(0 0 0 / 85%);
+  font-weight: 800;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 25%);
+}
+
+.InovuaReactDataGrid__cell__content {
+
+  padding: 0.125rem 0.5rem;
+  font: 500 0.8rem/1.5 system-ui, sans-serif;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.InovuaReactDataGrid__column-header .InovuaReactDataGrid__column-header__content {
+
+  padding: 0.5rem 1rem;
+  font: 800 0.85rem/1 system-ui, sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }

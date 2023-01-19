@@ -14,7 +14,7 @@
       "dom",
       "dom.iterable"
     ],
-    "module": "amd",
+    "module": "es2022",
     "moduleResolution": "Node",
     "noEmit": true,
     "noImplicitAny": true,
