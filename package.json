@@ -75,7 +75,7 @@
     "postcss": "8.4.21",
     "postcss-loader": "7.0.2",
     "postcss-scss": "4.0.6",
-    "prettier": "2.8.2",
+    "prettier": "2.8.3",
     "react-scripts": "5.0.1",
     "sass": "1.57.1",
     "sonarlint": "1.1.0",
