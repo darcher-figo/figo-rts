@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export const Frame: React.FC = (): JSX.Element => {
+export const Frame: React.FunctionComponent = (): JSX.Element => {
   return (
     <>
       <p>Frame template</p>
