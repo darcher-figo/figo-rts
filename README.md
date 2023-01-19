@@ -1,4 +1,4 @@
-# rTSX Template [<img align="right" alt src="https://gist.githubusercontent.com/darcher-/b2156141811e92f5d43e02b70d891211/raw/c2b447fbb85ec75396c57df9f61f63427c5303ba/figo-logo.svg" width="150" height="60">](https://figopetinsurance.com)
+# Figo React Typescript Template [<img align="right" alt src="https://gist.githubusercontent.com/darcher-/b2156141811e92f5d43e02b70d891211/raw/c2b447fbb85ec75396c57df9f61f63427c5303ba/figo-logo.svg" width="150" height="60">](https://figopetinsurance.com)
 A quick-starter template, guide, and reference for future React projects.
 
 :wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash::wavy_dash:
@@ -131,7 +131,7 @@ Package | Version | Description |
 <br />
 
 ### Style Guide
-Visit the [Wiki](https://github.com/darcher-/figo-starter/wiki) to reivew the Style Guides and standardizations.
+Visit the [Wiki](https://github.com/darcher-figo/figo-rts/wiki) to reivew the Style Guides and standardizations.
 
 <br />
 
