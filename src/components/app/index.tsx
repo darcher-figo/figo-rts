@@ -50,20 +50,19 @@ export const App: React.FC = (): JSX.Element => {
 
   React.useEffect((): (() => void) => {
     if (webWorker) {
-      // eslint-disable-next-line unicorn/prefer-add-event-listener, react-hooks/rules-of-hooks
-      webWorker.onmessage = (event: MessageEvent<string>) => {
+      webWorker.addEventListener('message', (event: MessageEvent<string>) => {
         if (event.data === 'BAD') {
           return;
         }
 
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-return, @typescript-eslint/unbound-method
-        setState(options => ({ ...options, ...JSON.parse(event.data) }));
-      };
+        const update = JSON.parse(event.data) as RequestT;
 
-      // eslint-disable-next-line unicorn/prefer-add-event-listener
-      webWorker.onerror = () => {
+        setState(options => ({ ...options, ...update }));
+      });
+
+      webWorker.addEventListener('errormessage', () => {
         console.error('Error');
-      };
+      });
 
       webWorker.postMessage('GET');
     }
