@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { title } from './data.fixture';
 import worker from '../../workers';
 import ReactDataGrid from '@inovua/reactdatagrid-community';
 import '@inovua/reactdatagrid-community/index.css';
@@ -26,6 +25,7 @@ interface RequestT {
   products: ProductT[];
   total: number;
   loading?: boolean;
+  worker?: Worker;
 }
 
 export const App: React.FC = (): JSX.Element => {
@@ -37,20 +37,19 @@ export const App: React.FC = (): JSX.Element => {
     loading: false,
   });
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  let webWorker: Worker | null = new Worker(worker);
-
   function swapLoadingTo(loading: boolean | undefined): void {
     setState(options => ({ ...options, loading }));
   }
 
   React.useEffect((): void => {
     swapLoadingTo(true);
+
+    setState(options => ({ ...options, worker: new Worker(worker) }));
   }, []);
 
   React.useEffect((): (() => void) => {
-    if (webWorker) {
-      webWorker.addEventListener('message', (event: MessageEvent<string>) => {
+    if (state.worker) {
+      state.worker.addEventListener('message', (event: MessageEvent<string>) => {
         if (event.data === 'BAD') {
           return;
         }
@@ -60,22 +59,24 @@ export const App: React.FC = (): JSX.Element => {
         setState(options => ({ ...options, ...update }));
       });
 
-      webWorker.addEventListener('errormessage', () => {
+      state.worker.addEventListener('errormessage', () => {
         console.error('Error');
       });
 
-      webWorker.postMessage('GET');
+      state.worker.postMessage('GET');
     }
 
     return (): void => {
-      if (webWorker) {
-        webWorker.terminate();
-        // eslint-disable-next-line unicorn/no-null, react-hooks/exhaustive-deps
-        webWorker = null;
+      if (state.worker) {
+        state.worker.terminate();
+        setState(options => {
+          delete options.worker;
+          return options;
+        });
         swapLoadingTo(false);
       }
     };
-  }, [state.loading]);
+  }, [state.loading, state.worker]);
 
   return (
     <>
