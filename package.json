@@ -64,7 +64,7 @@
     "@typescript-eslint/parser": "5.48.2",
     "core-js": "3.27.2",
     "css-loader": "6.7.3",
-    "eslint": "8.32.0",
+    "eslint": "8.35.0",
     "eslint-config-airbnb-typescript": "17.0.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-config-react-app": "7.0.1",
