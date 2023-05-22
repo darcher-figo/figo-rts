@@ -24,12 +24,12 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
-"@axe-core/react@4.5.2":
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/@axe-core/react/-/react-4.5.2.tgz#ef4c974d050ae03c662265b15a290686bfe1bcc0"
-  integrity sha512-I592DzOZcNE/o/q9KO92kxnAIHYsFMhhGxaByuIAHio8YeK7DGX1GadqWsNzzZ3qmrsfw1RncXZS43rQs2Bfvw==
+"@axe-core/react@4.7.1":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@axe-core/react/-/react-4.7.1.tgz#74fa34d1243874e4b72b02bf7e0dc560118812a8"
+  integrity sha512-GBd3ju32h7kpGg/3iKgiBo8NuqOJE+sFWvSd62EvV98QDfYAVgPHWVvJ9Ofur3M99I7uU+6yfeJYF1/S3q6Psw==
   dependencies:
-    axe-core "^4.5.2"
+    axe-core "^4.7.0"
     requestidlecallback "^0.3.0"
 
 "@babel/code-frame@7.12.11":
@@ -2798,10 +2798,10 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-axe-core@^4.5.2, axe-core@^4.6.2:
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.6.2.tgz#6e566ab2a3d29e415f5115bc0fd2597a5eb3e5e3"
-  integrity sha512-b1WlTV8+XKLj9gZy2DZXgQiyDp9xkkoe2a6U6UbYccScq2wgH/YwCeI2/Jq2mgo0HzQxqJOjWZBLeA/mqsk5Mg==
+axe-core@^4.6.2, axe-core@^4.7.0:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.7.1.tgz#04392c9ccb3d7d7c5d2f8684f148d56d3442f33d"
+  integrity sha512-sCXXUhA+cljomZ3ZAwb8i1p3oOlkABzPy08ZDAoGcYuvtBPlQ1Ytde129ArXyHWDhfeewq7rlx9F+cUx2SSlkg==
 
 axobject-query@^3.1.1:
   version "3.1.1"
