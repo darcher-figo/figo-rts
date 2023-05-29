@@ -46,7 +46,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rewire": "6.0.0",
-    "web-vitals": "3.1.1"
+    "web-vitals": "3.3.1"
   },
   "description": "A quick-starter template and guide to utilize on new projects.",
   "devDependencies": {
