@@ -80,7 +80,7 @@
     "react-scripts": "5.0.1",
     "sass": "1.62.1",
     "sonarlint": "1.1.0",
-    "style-loader": "3.3.1",
+    "style-loader": "3.3.3",
     "stylelint": "14.16.1",
     "stylelint-a11y": "1.2.3",
     "stylelint-color-format": "1.1.0",
