@@ -38,7 +38,7 @@
   "dependencies": {
     "@inovua/reactdatagrid-community": "5.9.3",
     "@testing-library/jest-dom": "5.16.5",
-    "@testing-library/react": "13.4.0",
+    "@testing-library/react": "14.0.0",
     "postcss-media-query-parser": "0.2.3",
     "postcss-resolve-nested-selector": "0.1.1",
     "postcss-selector-parser": "6.0.11",
