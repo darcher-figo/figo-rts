@@ -24,10 +24,10 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
-"@axe-core/react@4.7.1":
-  version "4.7.1"
-  resolved "https://registry.yarnpkg.com/@axe-core/react/-/react-4.7.1.tgz#74fa34d1243874e4b72b02bf7e0dc560118812a8"
-  integrity sha512-GBd3ju32h7kpGg/3iKgiBo8NuqOJE+sFWvSd62EvV98QDfYAVgPHWVvJ9Ofur3M99I7uU+6yfeJYF1/S3q6Psw==
+"@axe-core/react@4.7.3":
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/@axe-core/react/-/react-4.7.3.tgz#e042746e30615dcb4a2492664dbcc6b2a76b26f3"
+  integrity sha512-dN2ZqUdaWJNmxEuedJKkAZBBQWs1qj/Aeby2x8ZKMhhcDBGkcT42MRlaOMWTvPG/YosP6RaGi160eFFZ3TiUMg==
   dependencies:
     axe-core "^4.7.0"
     requestidlecallback "^0.3.0"
