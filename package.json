@@ -50,7 +50,7 @@
   },
   "description": "A quick-starter template and guide to utilize on new projects.",
   "devDependencies": {
-    "@axe-core/react": "4.7.1",
+    "@axe-core/react": "4.7.3",
     "@babel/core": "7.20.12",
     "@babel/plugin-syntax-flow": "7.21.4",
     "@babel/plugin-transform-react-jsx": "7.22.3",
